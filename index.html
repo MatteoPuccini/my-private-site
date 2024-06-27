@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HandwriterAI</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,43 +20,113 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#features">Features</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
     <main>
         <section id="home" class="input-section container">
-            <h2>Enter Your Text</h2>
-            <textarea id="user-input" rows="10" placeholder="Type your text here..."></textarea>
-            <button onclick="generateHandwriting()">Generate Handwriting</button>
+            <div class="section-content">
+                <h2>Enter Your Text</h2>
+                <textarea id="user-input" rows="10" placeholder="Type your text here..."></textarea>
+                <button onclick="generateHandwriting()">Generate Handwriting</button>
+            </div>
         </section>
         <section id="output" class="output-section container">
-            <h2>Generated Handwriting</h2>
-            <div id="output-placeholder" class="output-placeholder">
-                <!-- The generated image will be displayed here -->
+            <div class="section-content">
+                <h2>Generated Handwriting</h2>
+                <div id="output-placeholder" class="output-placeholder">
+                    <!-- The generated image will be displayed here -->
+                </div>
             </div>
         </section>
         <section id="about" class="about-section container">
-            <h2>About HandwriterAI</h2>
-            <p>HandwriterAI is an innovative tool designed to convert typed text into realistic, handwritten notes. Perfect for personal and professional use, HandwriterAI helps you create custom handwritten documents effortlessly.</p>
+            <div class="section-content">
+                <h2>About HandwriterAI</h2>
+                <p>HandwriterAI is an innovative tool designed to convert typed text into realistic, handwritten notes. Perfect for personal and professional use, HandwriterAI helps you create custom handwritten documents effortlessly.</p>
+                <p>Our AI-driven technology ensures that each note is unique and personalized to your style preferences.</p>
+            </div>
         </section>
         <section id="features" class="features-section container">
-            <h2>Features</h2>
-            <ul>
-                <li>Realistic Handwriting Generation</li>
-                <li>Customizable Styles</li>
-                <li>High-Quality Output</li>
-                <li>Easy to Use</li>
-            </ul>
+            <div class="section-content">
+                <h2>Features</h2>
+                <ul>
+                    <li>Realistic Handwriting Generation</li>
+                    <li>Customizable Styles</li>
+                    <li>High-Quality Output</li>
+                    <li>Easy to Use</li>
+                    <li>Fast and Efficient</li>
+                    <li>Supports Multiple Languages</li>
+                </ul>
+            </div>
+        </section>
+        <section id="gallery" class="gallery-section container">
+            <div class="section-content">
+                <h2>Gallery</h2>
+                <div class="gallery-grid">
+                    <img src="images/sample1.png" alt="Sample Handwriting 1">
+                    <img src="images/sample2.png" alt="Sample Handwriting 2">
+                    <img src="images/sample3.png" alt="Sample Handwriting 3">
+                    <img src="images/sample4.png" alt="Sample Handwriting 4">
+                </div>
+            </div>
+        </section>
+        <section id="pricing" class="pricing-section container">
+            <div class="section-content">
+                <h2>Pricing</h2>
+                <div class="pricing-tables">
+                    <div class="pricing-table">
+                        <h3>Basic</h3>
+                        <p>$9.99/month</p>
+                        <ul>
+                            <li>100 Handwritten Notes</li>
+                            <li>Basic Customization</li>
+                            <li>Email Support</li>
+                        </ul>
+                        <button>Choose Plan</button>
+                    </div>
+                    <div class="pricing-table">
+                        <h3>Premium</h3>
+                        <p>$19.99/month</p>
+                        <ul>
+                            <li>Unlimited Handwritten Notes</li>
+                            <li>Advanced Customization</li>
+                            <li>Priority Email Support</li>
+                        </ul>
+                        <button>Choose Plan</button>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="contact" class="contact-section container">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or need support, feel free to <a href="mailto:support@handwriterai.com">contact us</a>.</p>
+            <div class="section-content">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or need support, feel free to <a href="mailto:support@handwriterai.com">contact us</a>.</p>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
         <div class="container">
             <p>&copy; 2024 HandwriterAI. All rights reserved.</p>
+            <ul class="social-media">
+                <li><a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a></li>
+            </ul>
         </div>
     </footer>
     <script src="script.js"></script>
