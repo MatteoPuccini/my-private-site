@@ -1,31 +1,34 @@
-// script.js
-
-// Function to generate handwriting from the user input
+// Function to generate handwriting - Placeholder functionality
 function generateHandwriting() {
     const userInput = document.getElementById('user-input').value;
-    const outputPlaceholder = document.getElementById('output-placeholder');
+    const outputDiv = document.getElementById('output-placeholder');
 
-    // For demonstration, we're simulating the generation with a static image
-    // Replace this part with actual API call to your handwriting generation service
-    outputPlaceholder.innerHTML = `<img src="images/generated-handwriting.png" alt="Generated Handwriting">`;
+    // Placeholder functionality
+    outputDiv.innerHTML = `
+        <div class="handwriting-placeholder">
+            Handwritten output will appear here.
+            <br>
+            <img src="https://via.placeholder.com/600x300?text=Handwritten+Note+Here" alt="Handwritten Note">
+        </div>`;
+    outputDiv.style.background = 'none';
+    outputDiv.style.color = '#666';
 }
 
-// Form validation for the contact form
+// Form submission handling
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
 
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-
-    if (!name || !email || !message) {
+    if (name && email && message) {
+        alert('Thank you for contacting us, ' + name + '! We will get back to you shortly.');
+        document.getElementById('contact-form').reset();
+    } else {
         alert('Please fill in all fields.');
-        return;
     }
-
-    // Simulate form submission
-    alert('Message sent successfully!');
 });
+
 // Smooth scrolling for navigation
 document.querySelectorAll('nav ul li a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
