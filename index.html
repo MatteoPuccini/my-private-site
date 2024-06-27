@@ -8,26 +8,56 @@
 </head>
 <body>
     <header>
-        <h1>HandwriterAI</h1>
-        <p>Transform your text into realistic handwritten notes</p>
+        <div class="container">
+            <h1>HandwriterAI</h1>
+            <p>Transform your text into realistic handwritten notes</p>
+        </div>
     </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
     <main>
-        <section class="input-section">
+        <section id="home" class="input-section container">
             <h2>Enter Your Text</h2>
             <textarea id="user-input" rows="10" placeholder="Type your text here..."></textarea>
             <button onclick="generateHandwriting()">Generate Handwriting</button>
         </section>
-        <section class="output-section">
+        <section id="output" class="output-section container">
             <h2>Generated Handwriting</h2>
-            <div id="output" class="output-placeholder">
+            <div id="output-placeholder" class="output-placeholder">
                 <!-- The generated image will be displayed here -->
             </div>
         </section>
+        <section id="about" class="about-section container">
+            <h2>About HandwriterAI</h2>
+            <p>HandwriterAI is an innovative tool designed to convert typed text into realistic, handwritten notes. Perfect for personal and professional use, HandwriterAI helps you create custom handwritten documents effortlessly.</p>
+        </section>
+        <section id="features" class="features-section container">
+            <h2>Features</h2>
+            <ul>
+                <li>Realistic Handwriting Generation</li>
+                <li>Customizable Styles</li>
+                <li>High-Quality Output</li>
+                <li>Easy to Use</li>
+            </ul>
+        </section>
+        <section id="contact" class="contact-section container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need support, feel free to <a href="mailto:support@handwriterai.com">contact us</a>.</p>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2024 HandwriterAI. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 HandwriterAI. All rights reserved.</p>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
 </html>
-
