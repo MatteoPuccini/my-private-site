@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="HandwriterAI - Transform your text into realistic handwritten notes. Perfect for personal and professional use.">
-    <meta name="keywords" content="Handwriting, AI, Notes, Custom Handwriting, Professional Handwriting">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>HandwriterAI - Transform Your Text into Handwritten Notes</title>
+    <title>HandwriterAI</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -17,7 +14,7 @@
             <p>Transform your text into realistic handwritten notes</p>
         </div>
     </header>
-    <nav aria-label="Main navigation">
+    <nav>
         <div class="container">
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -30,31 +27,31 @@
         </div>
     </nav>
     <main>
-        <section id="home" class="input-section container" aria-labelledby="home-title">
+        <section id="home" class="input-section container">
             <div class="section-content">
-                <h2 id="home-title">Enter Your Text</h2>
-                <textarea id="user-input" rows="10" placeholder="Type your text here..." aria-label="Text input"></textarea>
+                <h2>Enter Your Text</h2>
+                <textarea id="user-input" rows="10" placeholder="Type your text here..."></textarea>
                 <button onclick="generateHandwriting()">Generate Handwriting</button>
             </div>
         </section>
-        <section id="output" class="output-section container" aria-labelledby="output-title">
+        <section id="output" class="output-section container">
             <div class="section-content">
-                <h2 id="output-title">Generated Handwriting</h2>
-                <div id="output-placeholder" class="output-placeholder" aria-live="polite">
+                <h2>Generated Handwriting</h2>
+                <div id="output-placeholder" class="output-placeholder">
                     <!-- The generated image will be displayed here -->
                 </div>
             </div>
         </section>
-        <section id="about" class="about-section container" aria-labelledby="about-title">
+        <section id="about" class="about-section container">
             <div class="section-content">
-                <h2 id="about-title">About HandwriterAI</h2>
+                <h2>About HandwriterAI</h2>
                 <p>HandwriterAI is an innovative tool designed to convert typed text into realistic, handwritten notes. Perfect for personal and professional use, HandwriterAI helps you create custom handwritten documents effortlessly.</p>
                 <p>Our AI-driven technology ensures that each note is unique and personalized to your style preferences.</p>
             </div>
         </section>
-        <section id="features" class="features-section container" aria-labelledby="features-title">
+        <section id="features" class="features-section container">
             <div class="section-content">
-                <h2 id="features-title">Features</h2>
+                <h2>Features</h2>
                 <ul>
                     <li>Realistic Handwriting Generation</li>
                     <li>Customizable Styles</li>
@@ -65,9 +62,9 @@
                 </ul>
             </div>
         </section>
-        <section id="gallery" class="gallery-section container" aria-labelledby="gallery-title">
+        <section id="gallery" class="gallery-section container">
             <div class="section-content">
-                <h2 id="gallery-title">Gallery</h2>
+                <h2>Gallery</h2>
                 <div class="gallery-grid">
                     <img src="images/sample1.png" alt="Sample Handwriting 1">
                     <img src="images/sample2.png" alt="Sample Handwriting 2">
@@ -76,9 +73,9 @@
                 </div>
             </div>
         </section>
-        <section id="pricing" class="pricing-section container" aria-labelledby="pricing-title">
+        <section id="pricing" class="pricing-section container">
             <div class="section-content">
-                <h2 id="pricing-title">Pricing</h2>
+                <h2>Pricing</h2>
                 <div class="pricing-tables">
                     <div class="pricing-table">
                         <h3>Basic</h3>
@@ -103,19 +100,19 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="contact-section container" aria-labelledby="contact-title">
+        <section id="contact" class="contact-section container">
             <div class="section-content">
-                <h2 id="contact-title">Contact Us</h2>
+                <h2>Contact Us</h2>
                 <p>If you have any questions or need support, feel free to <a href="mailto:support@handwriterai.com">contact us</a>.</p>
                 <form id="contact-form">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required aria-required="true">
+                    <input type="text" id="name" name="name" required>
                     
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required aria-required="true">
+                    <input type="email" id="email" name="email" required>
                     
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                    <textarea id="message" name="message" rows="5" required></textarea>
                     
                     <button type="submit">Send Message</button>
                 </form>
